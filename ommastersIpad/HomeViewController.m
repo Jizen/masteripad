@@ -63,7 +63,6 @@
 - (void)viewWillLayoutSubviews
 {
     [self _shouldRotateToOrientation:(UIDeviceOrientation)[UIApplication sharedApplication].statusBarOrientation];
-//    [self ];
 }
 -(void)_shouldRotateToOrientation:(UIDeviceOrientation)orientation {
     if (orientation == UIDeviceOrientationPortrait ||orientation ==

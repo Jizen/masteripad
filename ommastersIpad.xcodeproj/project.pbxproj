@@ -15,8 +15,8 @@
 		E08A1C8B1DAF227F009F7AC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08A1C891DAF227F009F7AC3 /* LaunchScreen.storyboard */; };
 		E08A1C961DAF2280009F7AC3 /* ommastersIpadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E08A1C951DAF2280009F7AC3 /* ommastersIpadTests.m */; };
 		E08A1CA11DAF2280009F7AC3 /* ommastersIpadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E08A1CA01DAF2280009F7AC3 /* ommastersIpadUITests.m */; };
-		E08A1CB91DAF2ED0009F7AC3 /* 启动页白色.png in Resources */ = {isa = PBXBuildFile; fileRef = E08A1CB81DAF2ED0009F7AC3 /* 启动页白色.png */; };
 		E0E564BE1DB08E430057D924 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E564BD1DB08E430057D924 /* HomeViewController.m */; };
+		E0E9A15B1DB0CC1E000384E5 /* launchimage.png in Resources */ = {isa = PBXBuildFile; fileRef = E0E9A15A1DB0CC1E000384E5 /* launchimage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +53,9 @@
 		E08A1C9C1DAF2280009F7AC3 /* ommastersIpadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ommastersIpadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08A1CA01DAF2280009F7AC3 /* ommastersIpadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ommastersIpadUITests.m; sourceTree = "<group>"; };
 		E08A1CA21DAF2280009F7AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E08A1CB81DAF2ED0009F7AC3 /* 启动页白色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动页白色.png"; sourceTree = "<group>"; };
 		E0E564BC1DB08E430057D924 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		E0E564BD1DB08E430057D924 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E0E9A15A1DB0CC1E000384E5 /* launchimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchimage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 				E08A1C871DAF227F009F7AC3 /* Assets.xcassets */,
 				E08A1C891DAF227F009F7AC3 /* LaunchScreen.storyboard */,
 				E08A1C8C1DAF227F009F7AC3 /* Info.plist */,
-				E08A1CB81DAF2ED0009F7AC3 /* 启动页白色.png */,
+				E0E9A15A1DB0CC1E000384E5 /* launchimage.png */,
 				E08A1C7B1DAF227F009F7AC3 /* Supporting Files */,
 			);
 			path = ommastersIpad;
@@ -265,10 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E9A15B1DB0CC1E000384E5 /* launchimage.png in Resources */,
 				E08A1C8B1DAF227F009F7AC3 /* LaunchScreen.storyboard in Resources */,
 				E08A1C881DAF227F009F7AC3 /* Assets.xcassets in Resources */,
 				E08A1C861DAF227F009F7AC3 /* Main.storyboard in Resources */,
-				E08A1CB91DAF2ED0009F7AC3 /* 启动页白色.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

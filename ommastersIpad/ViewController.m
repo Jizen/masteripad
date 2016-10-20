@@ -50,8 +50,15 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"首页" style:(UIBarButtonItemStyleDone) target:self action:@selector(homeViewAction)];
     
-}
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"清除缓存" style:(UIBarButtonItemStyleDone) target:self  action:@selector(cleanCache)];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_booking_delete"] style:(UIBarButtonItemStylePlain) target:self action:@selector(cleanCache)];
 
+    
+}
+- (void)cleanCache{
+    [self cleanCacheAndCookie];
+}
 - (void)requestHTML{
     //初始化webview
     NSString *httpStr = @"http://192.168.0.104:8088/masters/";
@@ -85,6 +92,25 @@
         //        [self createNavBar];
         
     }
+}
+
+/**清除缓存和cookie*/
+- (void)cleanCacheAndCookie{
+    //清除cookies
+    NSHTTPCookie *cookie;
+    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    for (cookie in [storage cookies]){
+        [storage deleteCookie:cookie];
+    }
+    
+    
+    //清除UIWebView的缓存
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    NSURLCache * cache = [NSURLCache sharedURLCache];
+    [cache removeAllCachedResponses];
+    [cache setDiskCapacity:0];
+    [cache setMemoryCapacity:0];
+    
 }
 
 @end
